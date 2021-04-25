@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: "Zen Dots", cursive;
+  font-family: "Zen Dots";
   font-weight: 400;
 }
 
@@ -229,73 +229,47 @@ a:hover span:nth-child(4) {
 }
 
 .progress-bars-wrapper {
-  margin-bottom: 10rem;
-}
-
-.progress-bar {
-  width: 60rem;
-  height: 3rem;
-  background-color: #ccc;
-  margin: 1.5rem 0;
-  border-radius: 0.3rem;
-  box-shadow: 0.2rem 0.2rem 1rem #555;
-  position: relative;
-}
-
-.progress-text {
-  position: absolute;
-  left: 1rem;
-  font-size: 1.5rem;
-  color: #fff;
-}
-
-.progress-text span {
-  margin: 0 0.5rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-}
-
-.progress-percent {
-  width: 0;
-  height: 100%;
-  background-color: rgb(25, 75, 116);
-  border-radius: 0.3rem;
-  transition: width 0.5s 0.5s ease-in-out;
-}
-
-.services {
-  width: 100%;
-  height: 30vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-}
-
-.service {
-  text-align: center;
-}
-
-.service:first-child,
-.service:last-child {
-  align-self: flex-start;
-}
-
-.service i {
-  font-size: 10rem;
-  color: #888;
+  width: 80%;
   margin-bottom: 2rem;
-  text-shadow: 0.1rem 0.1rem 0.5rem #555;
+}
+.progress-bars-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+}
+.logo {
+  max-width: 90%;
+  height: auto;
+}
+.HTMLCSSJS {
+  grid-column-start: 3;
+  grid-column-end: 5;
 }
 
-.service h2 {
-  font-size: 2rem;
-  color: #fff;
-  background-color: #777;
-  width: 25rem;
-  letter-spacing: 0.3rem;
-  transform: skew(-10deg);
-  box-shadow: 0.2rem 0.2rem 0.5rem #555;
+.zone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px;
+  padding: 20px;
+  /* display: block; */
+  border-radius: 10%;
+  transition: all 0.3s linear;
 }
+
+.zone:hover {
+  cursor: default;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  -o-box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 5px 15px,
+    inset rgba(0, 0, 0, 0.15) 0px -10px 20px;
+}
+
 /* End of Section 2 */
 
 /* Section 3 */
@@ -303,7 +277,7 @@ a:hover span:nth-child(4) {
   width: 100%;
   height: 100%;
   padding: 10rem 0;
-  background-color: #eef;
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -388,7 +362,7 @@ a:hover span:nth-child(4) {
 /* Section 4 */
 .section-4 {
   width: 100%;
-  height: 70vh;
+  height: 40vh;
   background-color: #333;
   display: flex;
   flex-direction: column;
@@ -400,44 +374,19 @@ a:hover span:nth-child(4) {
   color: #fff;
   box-shadow: none;
   border-color: #fff;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+}
+.contacts {
+  font-size: x-large;
+  color: lightgray;
 }
 
-.contact-form {
-  width: 50rem;
-  flex-direction: column;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  background-color: #eef;
-  font-size: 1.5rem;
-  border: 0.2rem solid rgb(25, 75, 116);
-  color: #555;
-}
-
-.contact-form textarea {
-  height: 10rem;
-  max-height: 15rem;
-  max-width: 100%;
-}
-
-.contact-form .contact-form-btn {
-  background-color: rgb(25, 75, 116);
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 1rem;
-  cursor: pointer;
-}
 /* End of Section 4 */
 
 /* Section 5 */
 .section-5 {
   width: 100%;
-  height: 30vh;
+  height: 25vh;
   background-color: #222;
   flex-direction: column;
 }
